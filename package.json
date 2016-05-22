@@ -1,0 +1,31 @@
+{
+  "name": "reverse-tunnel-ssh",
+  "version": "1.0.0",
+  "description": "Easy reverse ssh tunnel ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/agebrock/reverse-tunnel-ssh.git"
+  },
+  "keywords": [
+    "ssh",
+    "tunnel",
+    "reverse",
+    "webhooks",
+    "develop"
+  ],
+  "author": "christoph.hagenbrock@googlemail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agebrock/reverse-tunnel-ssh/issues"
+  },
+  "homepage": "https://github.com/agebrock/reverse-tunnel-ssh#readme",
+  "dependencies": {
+    "debug": "2.2.0",
+    "lodash.defaults": "4.0.1",
+    "ssh2": "0.5.0"
+  }
+}
