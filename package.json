@@ -26,6 +26,6 @@
   "dependencies": {
     "debug": "2.2.0",
     "lodash.defaults": "4.0.1",
-    "ssh2": "0.5.0"
+    "ssh2": "0.5.2"
   }
 }

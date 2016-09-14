@@ -1,6 +1,6 @@
 var Client = require('ssh2').Client;
 var Socket = require('net').Socket;
-var debug = require('debug');
+var debug = require('debug')('reverse-tunnel-ssh');
 
 var createConfig = require('./lib/config');
 
@@ -16,11 +16,12 @@ function createClient(rawConfig, callback) {
 
   conn.on('ready', function() {
     debug('ready');
-    conn.forwardIn(remoteHost, remotePort, function(err) {
+    conn.forwardIn(remoteHost, remotePort, function(err, port) {
       if (err) {
         errors.push(err);
         throw err;
       }
+      conn.emit('forward-in', port);
     });
   });
 
@@ -55,4 +56,3 @@ function createClient(rawConfig, callback) {
 }
 
 module.exports = createClient;
-
