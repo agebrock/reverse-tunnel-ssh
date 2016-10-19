@@ -33,7 +33,8 @@ var conn = tunnel({
   username: 'somebody',
   dstHost: '0.0.0.0', // bind to all IPv4 interfaces
   dstPort: 0, // dynamically choose an open port on tunneltest.com
-  srcHost: 8000, // must be specified if dstPort=0
+  //srcHost: '127.0.0.1', // default
+  srcPort: 8000, // must be specified if dstPort=0
 }, function (error, clientConnection) {
   //
 });
