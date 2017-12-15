@@ -22,6 +22,7 @@ tunnel({
   dstPort: 8000,
   //srcHost: '127.0.0.1', // default
   //srcPort: dstPort // default is the same as dstPort
+  //privateKey: require('fs').readFileSync('/Your/Private/Key');
 }, function(error, clientConnection) {
   //
 });
@@ -35,6 +36,8 @@ var conn = tunnel({
   dstPort: 0, // dynamically choose an open port on tunneltest.com
   //srcHost: '127.0.0.1', // default
   srcPort: 8000, // must be specified if dstPort=0
+  //privateKey: require('fs').readFileSync('/Your/Private/Key');
+
 }, function (error, clientConnection) {
   //
 });
