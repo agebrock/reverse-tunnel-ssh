@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/agebrock/reverse-tunnel-ssh#readme",
   "dependencies": {
-    "debug": "2.2.0",
+    "debug": "^2.6.9",
     "lodash.defaults": "^4.2.0",
     "ssh2": "0.5.2"
   }
